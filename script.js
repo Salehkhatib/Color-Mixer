@@ -20,14 +20,18 @@ function colors() {
 }
 colors()
 
-document.querySelector("#random").addEventListener("click", function () {
-    fetch("https://dummy-apis.netlify.app/api/color")
+
+
+
+ let randomColor = document.querySelector("#random")
+     randomColor.addEventListener("click", function () {
+    
+       fetch("https://dummy-apis.netlify.app/api/color")
       .then((req) => req.json())
       .then((colors) => {
         red.value = colors.rgb.r;
-        green.value = colors.rgb.g;
-        blue.value = colors.rgb.b;
-        setBackgroundColor();
+        green.value = colors.rgb.b;
+        blue.value = colors.rgb.g;
       });
       colors()
   });
