@@ -27,7 +27,7 @@ colors()
      randomColor.addEventListener("click", function () {
     
        fetch("https://dummy-apis.netlify.app/api/color")
-      .then((req) => req.json())
+      .then((response) => response.json())
       .then((colors) => {
         red.value = colors.rgb.r;
         green.value = colors.rgb.b;
