@@ -16,10 +16,12 @@ html {
   
   body {
     margin: 0;
+    padding: 0;
    
   }
   
   header {
+    width: 100%;
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, 0.75);
     height: 10vh;
@@ -42,5 +44,22 @@ html {
   .green {
     accent-color: green;
   }
+
+  #random{
+    
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    border: 2px solid silver;
+    border-radius: 5px;
+    height: 50px; 
+    box-shadow: inset 0 0 10px #5f5c56
+  }
+
+  #random:active{
+    box-shadow: none;
+   
+  }
+  
 
   
