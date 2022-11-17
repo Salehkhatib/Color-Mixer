@@ -23,6 +23,7 @@ colors()
 
 
 
+
  let randomColor = document.querySelector("#random")
      randomColor.addEventListener("click", function () {
     
@@ -34,5 +35,14 @@ colors()
         blue.value = colors.rgb.g;
       });
       colors()
+      localStorage()
   });
   
+  function localStorage() {
+    if(localStorage.setItem("colors")) {
+      const qouteElement = localStorage.getItem("colors");
+      todos = JSON.parse(colorsElement);
+    }  
+  }
+  localStorage()
+       loadData()
